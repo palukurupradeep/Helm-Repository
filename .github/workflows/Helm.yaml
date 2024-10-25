@@ -30,4 +30,4 @@ jobs:
         file: /Applicationcode1/Dockerfile
         push: true
         tags: |
-           korcomptenz.jfrog.io/docker-trial/exposures/Helm-Repository:1.0.0
+           korcomptenz.jfrog.io/docker-trial/exposures/repository:1.0.0
