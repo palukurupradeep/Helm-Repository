@@ -26,8 +26,8 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
-        context: /Applicationcode1
-        file: /Applicationcode1/Dockerfile
+        context: ./Applicationcode1
+        file: ./Applicationcode1/Dockerfile
         push: true
         tags: |
            korcomptenz.jfrog.io/docker-trial/exposures/repository:1.0.0
