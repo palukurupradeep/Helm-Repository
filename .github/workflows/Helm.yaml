@@ -59,7 +59,7 @@ jobs:
  
     - name: Deploy to AKS
       run: |
-        helm upgrade --install helmrelease ./mychart \
+        helm upgrade --install helmrelease ./Pcharts \
           --namespace jfrog \
           --set image.repository=korcomptenz.jfrog.io/docker-trial/exposures/repository \
           --set image.tag=1.0.0 
