@@ -1,12 +1,8 @@
-apiVersion: v1
-kind: Service 
-metadata:
-  name: pradeep-loadbalancer-service
-spec:
-  type: LoadBalancer # ClusterIp, # NodePort
-  selector:
-    app: myapp3
-  ports: 
-    - name: http
-      port: 80 # Service Port
-      targetPort: 80 # Container Port
+apiVersion: v2
+name: pcharts  # This line is required and was missing
+version: 0.1.0  # This should be the version of your chart
+description: A Helm chart for Kubernetes  # Optional but recommended
+
+# You can add other optional fields here, such as:
+# type: application
+# appVersion: "1.0.0"
